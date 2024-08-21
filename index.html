@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>My Minecraft Texture Packs</title>
+	<style>
+		body {
+			background-color: #1e565e;
+			color: #23c8d2;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+			margin: 0;
+			flex-direction: column;
+			font-family: Arial, sans-serif;
+		}
+		.container {
+			text-align: center;
+		}
+		.pack {
+			background-color: white;
+			color: #1e565e;
+			border: none;
+			padding: 20px;
+			margin: 10px;
+			cursor: pointer;
+			font-size: 18px;
+			width: 200px;
+			border-radius: 10px;
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+		}
+		.pack:hover {
+			background-color: #ffffffcc;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>My Minecraft Texture Packs</h1>
+		<div class="pack" onclick="window.location.href='https://example.com/bedrock-pack'">Bedrock Texture Pack</div>
+		<div class="pack" onclick="window.location.href='https://example.com/java-pack'">Java Texture Pack</div>
+	</div>
+</body>
+</html>
