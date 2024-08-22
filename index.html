@@ -7,7 +7,10 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <style>
         body {
-            background-color: #1e565e;
+            background-image: url('your-background-image.jpg'); /* Replace with your custom background image */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
             color: #23c8d2;
             display: flex;
             justify-content: center;
@@ -21,7 +24,8 @@
             text-align: center;
         }
         .pack, .button {
-            background-color: white;
+            background-image: url('button-texture.jpg'); /* Replace with your button texture image */
+            background-size: cover;
             color: #1e565e;
             border: none;
             padding: 25px;
@@ -34,7 +38,7 @@
             transition: background-color 0.3s ease;
         }
         .pack:hover, .button:hover {
-            background-color: #ffffffcc;
+            background-color: rgba(255, 255, 255, 0.8);
         }
         .button {
             display: flex;
@@ -44,6 +48,14 @@
         .button img {
             margin-right: 10px;
         }
+        .bottom-buttons {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
     </style>
 </head>
 <body>
@@ -51,6 +63,8 @@
         <h1>My Minecraft Texture Packs</h1>
         <div class="pack" onclick="window.location.href='https://example.com/bedrock-pack'">Bedrock Texture Pack</div>
         <div class="pack" onclick="window.location.href='https://example.com/java-pack'">Java Texture Pack</div>
+    </div>
+    <div class="bottom-buttons">
         <div class="button" onclick="window.location.href='https://discord.com/invite/your-discord-link'">
             <img src="discord-icon.png" alt="Discord" width="20"> Join Discord
         </div>
