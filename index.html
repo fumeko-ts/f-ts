@@ -39,7 +39,7 @@
             text-align: left;
             margin: 20px;
         }
-        .pack, .button {
+        .pack {
             background-image: url('button-texture.jpg'); /* Replace with your button texture image */
             background-size: cover;
             color: #1e565e;
@@ -53,13 +53,28 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             transition: background-color 0.3s ease;
         }
-        .pack:hover, .button:hover {
+        .pack:hover {
             background-color: rgba(255, 255, 255, 0.8);
         }
         .button {
+            background-image: url('button-texture.jpg'); /* Replace with your button texture image */
+            background-size: cover;
+            color: #1e565e;
+            border: none;
+            padding: 12.5px; /* Reduced padding for smaller buttons */
+            margin: 10px;
+            cursor: pointer;
+            font-size: 10px; /* Reduced font size for smaller buttons */
+            width: 110px; /* Reduced width for smaller buttons */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease;
             display: flex;
             align-items: center;
             justify-content: center;
+        }
+        .button:hover {
+            background-color: rgba(255, 255, 255, 0.8);
         }
         .button img {
             margin-right: 10px;
