@@ -19,6 +19,22 @@
             margin: 0;
             font-family: Arial, sans-serif;
         }
+        .title-bar {
+            width: 100%;
+            background-color: #1e565e;
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .title-bar img {
+            height: 50px;
+            margin-right: 20px;
+        }
+        .title-bar h1 {
+            color: #23c8d2;
+            margin: 0;
+        }
         .container {
             text-align: left;
             margin: 20px;
@@ -53,14 +69,17 @@
             bottom: 20px;
             right: 20px;
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             align-items: flex-end;
         }
     </style>
 </head>
 <body>
-    <div class="container">
+    <div class="title-bar">
+        <img src="your-logo.png" alt="Logo"> <!-- Replace with your custom logo image -->
         <h1>My Minecraft Texture Packs</h1>
+    </div>
+    <div class="container">
         <div class="pack" onclick="window.location.href='https://example.com/bedrock-pack'">Bedrock Texture Pack</div>
         <div class="pack" onclick="window.location.href='https://example.com/java-pack'">Java Texture Pack</div>
     </div>
