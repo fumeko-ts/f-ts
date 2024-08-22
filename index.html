@@ -1,46 +1,65 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<title>My Minecraft Texture Packs</title>
-	<link rel="icon" href="favicon.ico" type="image/x-icon">
-	<style>
-		body {
-			background-color: #1e565e;
-			color: #23c8d2;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			height: 100vh;
-			margin: 0;
-			flex-direction: column;
-			font-family: Arial, sans-serif;
-		}
-		.container {
-			text-align: center;
-		}
-		.pack {
-			background-color: white;
-			color: #1e565e;
-			border: none;
-			padding: 20px;
-			margin: 10px;
-			cursor: pointer;
-			font-size: 18px;
-			width: 200px;
-			border-radius: 10px;
-			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-		}
-		.pack:hover {
-			background-color: #ffffffcc;
-		}
-	</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Minecraft Texture Packs</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            background-color: #1e565e;
+            color: #23c8d2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            flex-direction: column;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            text-align: center;
+        }
+        .pack, .button {
+            background-color: white;
+            color: #1e565e;
+            border: none;
+            padding: 20px;
+            margin: 10px;
+            cursor: pointer;
+            font-size: 18px;
+            width: 200px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease;
+        }
+        .pack:hover, .button:hover {
+            background-color: #ffffffcc;
+        }
+        .button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .button img {
+            margin-right: 10px;
+        }
+    </style>
 </head>
 <body>
-	<div class="container">
-		<h1>My Minecraft Texture Packs</h1>
-		<div class="pack" onclick="window.location.href='https://example.com/bedrock-pack'">Bedrock Texture Pack</div>
-		<div class="pack" onclick="window.location.href='https://example.com/java-pack'">Java Texture Pack</div>
-	</div>
+    <div class="container">
+        <h1>My Minecraft Texture Packs</h1>
+        <div class="pack" onclick="window.location.href='https://example.com/bedrock-pack'">Bedrock Texture Pack</div>
+        <div class="pack" onclick="window.location.href='https://example.com/java-pack'">Java Texture Pack</div>
+        <div class="button" onclick="window.location.href='https://discord.com/invite/your-discord-link'">
+            <img src="discord-icon.png" alt="Discord" width="20"> Join Discord
+        </div>
+        <div class="button" onclick="window.location.href='https://www.planetminecraft.com/member/your-username/'">
+            <img src="planetminecraft-icon.png" alt="Planet Minecraft" width="20"> Planet Minecraft
+        </div>
+        <div class="button" onclick="window.location.href='https://account.xbox.com/en-us/Profile?gamerTag=your-gamertag'">
+            <img src="xbox-icon.png" alt="Xbox" width="20"> Xbox Profile
+        </div>
+    </div>
 </body>
 </html>
