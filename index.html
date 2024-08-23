@@ -91,6 +91,11 @@
             flex-direction: row;
             align-items: flex-end;
         }
+        .discord-widget {
+            position: absolute;
+            bottom: 16px;
+            left: 16px;
+        }
     </style>
 </head>
 <body>
@@ -112,6 +117,9 @@
         <div class="button" onclick="window.location.href='https://account.xbox.com/en-us/Profile?gamerTag=your-gamertag'">
             <img src="xbox-icon.png" alt="Xbox" width="26"> Xbox Profile
         </div>
+    </div>
+    <div class="discord-widget">
+        <iframe src="https://discord.com/widget?id=1203662717588873216&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
     </div>
 </body>
 </html>
